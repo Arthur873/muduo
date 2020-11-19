@@ -11,6 +11,7 @@ using namespace muduo::net;
 int main()
 {
   LOG_INFO << "pid = " << getpid();
+  std::cout << "test commit" << endl;
   EventLoop loop;
   InetAddress listenAddr(2009);
   DiscardServer server(&loop, listenAddr);
